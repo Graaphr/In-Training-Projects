@@ -1,0 +1,87 @@
+/*Background-Color*/
+body {
+    background-color: black;
+}
+
+
+/*Username and Password Bar*/
+.Form {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: transparent;
+}
+
+.Form-Item01,
+.Form-Item02 {
+    position: relative;
+    margin-bottom: 15px;
+}
+.Form-Item01 input,
+.Form-Item02 input{
+    display: block;
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    transition: all .3s ease;
+    padding: 0 15px;
+    color: white;
+}
+::-ms-reveal {
+    filter: invert(100%);
+}
+.Form-Item01 input:focus,
+.Form-Item02 input:focus{
+    border-color: greenyellow;
+    background: transparent;
+}
+
+.Form-Item01 label,
+.Form-Item02 label{
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 13px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background: black;
+    padding: 0 10px;
+    color: rgba(172, 255, 47, 0.3);
+    transition: all .3s ease;
+}
+
+.Form-Item01 input:focus + label,
+.Form-Item01 input:valid + label,
+.Form-Item02 input:focus + label,
+.Form-Item02 input:valid + label{
+    font-size: 11px;
+    top: -5px;
+    color: greenyellow;
+}
+.Form-Item01 input:focus + label,
+.Form-Item02 input:focus + label{
+    color: white;
+}
+
+
+/*Login Button*/
+.Login {
+    width: 75px;
+    height: 40px;
+    position: relative;
+    left: 358px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    border: 2px solid greenyellow;
+    font-family: arial;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.Login:active {
+    background-color: white;
+    border: 2px solid white;
+}
